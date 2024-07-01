@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".RegActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#007FC8"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/regLinkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="直接登录"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/regEPhone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入您的手机号"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <EditText
+        android:id="@+id/regEPwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入登录密码"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <Button
+        android:id="@+id/regBtnReg"
+        android:layout_width="match_parent"
+        android:text="注册"
+        android:textColor="#000"
+        android:backgroundTint="#EDF2F3"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/regLinkPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册即视为同意"
+            android:textColor="#999"></TextView>
+        <TextView
+            android:id="@+id/regLinkXy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="慕淘服务协议"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#66929A"></TextView>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".FindActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#007FC8"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="找回密码"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/findBtnClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/login_close"></ImageView>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/findEPhone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入手机号"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <EditText
+        android:id="@+id/findEOldPwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入旧密码"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <EditText
+        android:id="@+id/findEPwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入新密码"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <EditText
+        android:id="@+id/findEPwds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请输入确定新密码"
+        android:textSize="12sp"
+        android:height="45dp"
+        />
+
+    <Button
+        android:id="@+id/findBtnFind"
+        android:layout_width="match_parent"
+        android:text="确定修改"
+        android:textColor="#000"
+        android:backgroundTint="#EDF2F3"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/findLinkLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录账号"
+            android:textColor="#5C98AD"></TextView>
+        <TextView
+            android:id="@+id/findLinkReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:text="免费注册"
+            android:textColor="#5C98AD"
+            ></TextView>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
